@@ -12,11 +12,11 @@ summary(fullmat$Estado)
 a√±o=subset(fullmat$A.o._de_colecta<1980)
 #Pregunta 1.7 visualizar cu√°ntas muestras hay por cada raza
 summary(fullmat$Raza)
-#Pregunta 1.8 
+#Pregunta 1.8 calcular el promedio de altitud en la que se colectaron las muestras
 mean(fullmat$Altitud)
-#Pregunta 1.9
+#Pregunta 1.9 calcular la altitud m·xima y mÌnima en las que se hizo la colecta
 range(fullmat$Altitud)
-#Pregunta 1.10
+#Pregunta 1.10 hacer una nueva data frame que incluya solo la raza olotillo
 olotillo <-fullmat[fullmat$Raza=="Olotillo",]
 #para visualizar la tabla 
 View(olotillo)

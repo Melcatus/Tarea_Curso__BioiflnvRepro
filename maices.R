@@ -1,16 +1,16 @@
 #elegir como working directory "BioinfinvRepro/Unidad7/Prac_Uni7/maices/meta/bin"
 #Pregunta 1.1 cargar como df el archivo de maiz-teocintle
-fullmat <-read.tabla("home/mel/BioinfinvRepro/Unidad7/Prac_Uni7/maices/meta/maizteocintle_SNP50k_meta_extended.txt",head = TRUE, sep = ",", na.strings = NULL)
+fullmat <-read.csv ("C:/Users/Mel/Desktop/BioinfinvRepro-master/Unidad7/Prac_Uni7/maices/meta/maizteocintle_SNP50k_meta_extended.csv",head = TRUE, sep = ",", na.strings = NULL)
 #Pregunta 1.2  El tipo de objeto que creamos es un data frame
 #Pregunta 1.3 visualizar las primeras 6 filas dle archivo
 fullmat[1:6,]
-#Pregunta 1.4 Contar cuÃ¡ntas muestras hay = 165
+#Pregunta 1.4 Contar cuantas muestras hay = 165
 nrow(fullmat)
 #Pregunta 1.5 contar los estados que fueron muestreados =20
 summary(fullmat$Estado)
 #Pregunta 1.6 muestras que fueron colectadas antes 1980 = 8
-aÃ±o=subset(fullmat$A.o._de_colecta<1980)
-#Pregunta 1.7 visualizar cuÃ¡ntas muestras hay por cada raza
+summary(fullmat$AÌ.o._de_colecta)
+#Pregunta 1.7 visualizar cuántas muestras hay por cada raza
 summary(fullmat$Raza)
 #Pregunta 1.8 calcular el promedio de altitud en la que se colectaron las muestras
 mean(fullmat$Altitud)
